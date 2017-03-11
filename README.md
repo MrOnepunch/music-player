@@ -1,8 +1,11 @@
-#音乐播放器
-- 使用jquery实现的音乐播放器，
+#MusicPlayer
+- 使用原生 js实现的音乐播放器，
 - 使用 css3 增加了唱片旋转的效果，
 - 实现播放、暂停、切歌、播放进度条等功能
-![image](https://github.com/MrOnepunch/player/blob/master/music player.gif)
+
+#音乐播放器
+![](https://github.com/MrOnepunch/player/blob/master/music player.gif)
+
 # 功能
 1. 音乐列表显示
 2. 默认播放音乐列表的第一首歌
