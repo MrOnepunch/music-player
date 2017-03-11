@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>dududu</title>
+        <link rel="stylesheet" href="Mcss.css">
+    </head>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <body>
+        <div id="id-container">
+            <header>
+                <div class="musicName">
+                    <img id="id-img-return" src="images/return.png" alt="" />
+                    <div class="music-info vertical-center">
+                        <span id=id-song-name>百恋歌</span>
+                    </div>
+                    <img id="id-img-src" src="images/src.png" alt="" />
+                </div>
+            </header>
+            <main>
+                <div class="musicBg">
+                    <img id="id-img-musicBg" src="images/百恋歌.jpg" alt="" />
+                    <img id="id-img-player" class="img-rolling" src="images/百恋歌.jpg" alt="" />
+                    <div class="bgCover"></div>
+                </div>
+            </main>
+            <div class="footer">
+                <div class="player-slider">
+                    <time id=id-time-current class=left>0:00</time>
+                    <input id=id-input-slider type="range" value="">
+                    <time id=id-time-duration class=right>2:31</time>
+                </div>
+                <div class="playerControl">
+                    <div class="player-buttons">
+                        <img id=id-button-up src="images/prev.png" data-action=prev alt="" />
+                        <img id=id-button-play src="images/play.png" data-action=play alt="" />
+                        <img id=id-button-down src="images/next.png" data-action=next alt="" />
+                    </div>
+                    <div class="slider-up-button">
+                        <img id="footer-mode" src="images/onebyone.png" alt="" />
+                        <img id="footer-downLoad" src="images/download.png" alt="" />
+                        <img id="footer-love" src="images/love.png" alt="" />
+                        <img id="footer-about" src="images/about.png" alt="" />
+                        <!-- <button type="button" data-action=single>单曲</button>
+                        <button type="button" data-action=loop>循环</button>
+                        <button type="button" data-action=random>随机</button>
+                        <button type="button" data-action=order>顺序</button> -->
+                    </div>
+                </div>
+            </div>
+            <audio id="id-audio-player">
+                <source src="songs/百恋歌.mp3">
+                <source src="songs/爱呗.mp3">
+                <source src="songs/クリスマスソング.mp3">
+                <source src="songs/superman.mp3">
+                <source src="songs/梦のしずく.mp3">
+                <source src="songs/笨小孩.mp3">
+            </audio>
+            <div class="play-list-container">
+                <div class="list-name">
+                    <div class="list-title">播放列表</div>
+                </div>
+                <ul class="play-list" data-songs=6 data-index=0>
+                    <li class="li-active">
+                        <img style="display:inline-block;" class="song-play" src="images/song_play.png" alt="" />
+                        <song id=id-song-0>百恋歌</song>
+                    </li>
+                    <li>
+                        <img class="song-play" src="images/song_play.png" alt="" />
+                        <song id=id-song-1>爱呗</song>
+                    </li>
+                    <li>
+                        <img class="song-play" src="images/song_play.png" alt="" />
+                        <song id=id-song-2>クリスマスソング</song>
+                    </li>
+                    <li>
+                        <img class="song-play" src="images/song_play.png" alt="" />
+                        <song id=id-song-3>superman</song>
+                    </li>
+                    <li>
+                        <img class="song-play" src="images/song_play.png" alt="" />
+                        <song id=id-song-4>梦のしずく</song>
+                    </li>
+                    <li>
+                        <img class="song-play" src="images/song_play.png" alt="" />
+                        <song id=id-song-5>笨小孩</song>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src='music.js'></script>
+</html>
